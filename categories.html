@@ -1,0 +1,13 @@
+---
+layout: default
+title: LightSpeed Categories
+---
+<h2>Categories</h2>
+<div class="category-summary">
+    {% for category in site.categories %}
+        <h3><b>{{category | first}}</b></h3>
+            {% for post in category[1] %}
+                <h3>{{ post.date | date: '%Y-%m-%d' }} >> <a href="{{ post.url }}">{{ post.title }}</a></h3>
+            {% endfor %}
+    {% endfor %}
+</div>

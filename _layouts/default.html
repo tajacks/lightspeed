@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            {% include header.html %}
+        </header>
+
+        <main>
+            {{ content }}
+        </main>
+
+        <footer>
+            {% include footer.html %}
+        </footer>
+    </div>
+</body>
+</html>
