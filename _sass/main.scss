@@ -6,10 +6,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  min-height: 100vh;
-  min-width: 300px;
   overflow-x: hidden;
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* 01 Centering */
@@ -28,6 +25,22 @@ body {
 }
 
 /* 03 Spacing */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  min-height: 85%;
+  margin: 0 auto -50px;
+}
+
+.footer,
+.push {
+  height: 50px;
+  padding: 0;
+}
 
 body {
   line-height: 1.5;

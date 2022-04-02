@@ -14,4 +14,8 @@ for site colours, spacing, and code formatting. The main page can be adapted to 
 freeform intentionally. LightSpeed is a personal site first and a platform for web posts second.
 
 ## Features
+- Pagination
+  - Posts
+  - Categories
 - Posts
+- RSS
