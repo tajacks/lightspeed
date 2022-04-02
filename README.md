@@ -28,4 +28,4 @@ Once added, run `bundle install` to install them if not present already.
 
 CSS styles adapted and modified from Jeremy Thomas' 'Web Design in 4 Minutes'. 
 
-Theme spacing, colours, and content layout provided by my wife ♥
+Theme spacing, colours, and content layout feedback provided by my wife ♥
