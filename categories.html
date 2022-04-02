@@ -6,8 +6,11 @@ title: LightSpeed Categories
 <div class="category-summary">
     {% for category in site.categories %}
         <h3><b>{{category | first}}</b></h3>
-            {% for post in category[1] %}
+            {% for post in category[1] limit:3 %}
                 <h3>{{ post.date | date: '%Y-%m-%d' }} >> <a href="{{ post.url }}">{{ post.title }}</a></h3>
             {% endfor %}
+        <h3>See all posts in {{category | first}} ({{category[1] | size}}) <a href="/category/{{category | first | downcase }}/posts.html">&gt;&gt;</a></h3>
+        <br>
     {% endfor %}
 </div>
+

@@ -1,0 +1,33 @@
+# Site Specific Configuration
+name: LightSpeed
+description: A simple Jekyll theme
+url: https://example.com
+author: tajacks
+timezone: America/Toronto
+timezone_short: ET
+
+# Paginate
+pagination:
+  enabled: true
+  # Value set low for demonstration purposes
+  per_page: 3
+  indexpage: 'posts'
+  sort_field: 'date'
+  sort_reverse: true
+
+# Category Paginating
+autopages:
+  enabled: true
+  categories:
+    title: 'Posts in category :cat'
+    permalink: '/category/:cat'
+    silent: false
+
+# Exclusions
+exclude: [ 'README.md', 'COPYING' ]
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+
