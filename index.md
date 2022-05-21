@@ -1,7 +1,6 @@
 ---
 layout: default
 title: LightSpeed Home
-headline: sample
 ---
 
 ## About
