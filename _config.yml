@@ -6,12 +6,19 @@ author: tajacks
 timezone: America/Toronto
 timezone_short: ET
 
+# Keywords
+keywords: ['seo', 'key', 'words']
+
+# Styling
+sass:
+  sass_dir: _sass
+  style: expanded # compressed, compact, expanded or compressed
+
 # Paginate
 pagination:
   enabled: true
   # Value set low for demonstration purposes
   per_page: 3
-  indexpage: 'posts'
   sort_field: 'date'
   sort_reverse: true
 
@@ -30,4 +37,5 @@ exclude: [ 'README.md', 'COPYING' ]
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
+  - jekyll-seo-tag
 

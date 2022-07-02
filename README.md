@@ -13,16 +13,21 @@ Add the following gems to your Gemfile:
 ```
 gem "jekyll"
 gem "jekyll-feed"
+gem "jekyll-seo-tag"
 gem "jekyll-paginate-v2"
 ```
 
-Once added, run `bundle install` to install them if not present already. 
+Once added, run `bundle install` to install them if not present already. SEO is optional and can be removed without 
+impacting other functionality.
 
 ## Features
 
 - Post Support (Blog)
 - Pagination and Dynamic Categories
 - RSS Feed
+- SEO
+- Basic Mobile Support
+- Syntax Highlighting (highlight.js)
 
 ## Acknowledgements
 

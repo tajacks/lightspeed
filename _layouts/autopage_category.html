@@ -4,18 +4,20 @@ pagination:
   enabled: true
   per_page: 10
 ---
-<h2>{{ page.pagination.category }}</h2>
 <div class="post-summary">
+    <h2>Posts</h2>
     {% for post in paginator.posts %}
-    <h3>{{ post.date | date: '%Y-%m-%d' }} >> <a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <span class="post-item">{{ post.date | date: '%Y-%m-%d' }} >> <a href="{{ post.url }}">{{ post.title }}</a><span class="float-right">{{ post.categories }}</span></span>
     {% endfor %}
 </div>
 
-{% if paginator.total_pages > 1 %}
+<div class="post-nav">
+    {% if paginator.total_pages > 1 %}
     {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">&lt;- Older</a>
     {% endif %}
     {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer -&gt;</a>
     {% endif %}
-{% endif %}
+    {% endif %}
+</div>
