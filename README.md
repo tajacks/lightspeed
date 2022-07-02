@@ -29,6 +29,18 @@ impacting other functionality.
 - Basic Mobile Support
 - Syntax Highlighting (highlight.js)
 
+## JavaScript Requirements
+`highlight.js` can be converted to CDN delivery, instead of local, by changing lines 12 & 12 in `head.html` from:
+
+
+```
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/atom-one-dark.min.css" />
+<script src="{{ site.baseurl }}/assets/js/highlight.min.js"></script>
+```
+
+
+To a CDN provider.
+
 ## Acknowledgements
 
 CSS styles adapted and modified from Jeremy Thomas' 'Web Design in 4 Minutes'. 
