@@ -1,0 +1,63 @@
+/* Style inspiration and settings adapted from https://github.com/jgthms/web-design-in-4-minutes*/
+
+/* Base */
+html {
+  font-size: 18px;
+}
+
+/* 01 Font family */
+
+body {
+  font-family: "Courier New", "Helvetica", sans-serif;
+}
+
+/* 03 Spacing */
+
+
+.padded {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+
+header h1, h5 {
+  display: inline;
+}
+
+/* 04 Color and contrast */
+
+body {
+  color: #c5ccce;
+  background-color: #282f3a;
+}
+
+h1,
+h2,
+strong {
+  color: #dcdede;
+}
+
+header h5 {
+  font-weight: lighter;
+}
+
+/* 05 Balance */
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+/* 06 Primary color */
+
+a {
+  color: #7e92a2;
+}
+
+/* 07 Secondary colors */
+
+h1,
+h2,
+strong {
+  font-weight: 500;
+}

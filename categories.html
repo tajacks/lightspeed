@@ -2,15 +2,17 @@
 layout: default
 title: LightSpeed Categories
 ---
-<h2>Categories</h2>
+
 <div class="category-summary">
+    <h2>Categories</h2>
     {% for category in site.categories %}
-        <h3><b>{{category | first}}</b></h3>
+        <h3 class="category-header"><b>{{category | first}}</b></h3>
             {% for post in category[1] limit:3 %}
-                <h3>{{ post.date | date: '%Y-%m-%d' }} >> <a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <span class="post-item">{{ post.date | date: '%Y-%m-%d' }} >> <a href="{{ post.url }}">{{ post.title }}</a></span>
             {% endfor %}
-        <h3>See all posts in {{category | first}} ({{category[1] | size}}) <a href="/category/{{category | first | downcase }}/posts.html">&gt;&gt;</a></h3>
-        <br>
+    <div class="category-all-nav">
+        <h4>See all posts in {{category | first}} ({{category[1] | size}}) <a href="/category/{{category | first | downcase }}/">&gt;&gt;</a></h4>
+    </div>
     {% endfor %}
 </div>
 

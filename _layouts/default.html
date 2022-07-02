@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    {% include head.html %}
 </head>
+<script>hljs.highlightAll();</script>
 <body>
-    <div class="container">
-        <header id="header">
+    <div class="wrapper">
+        <header class="wrapper-header">
             {% include header.html %}
         </header>
 
-        <main>
+        <main class="wrapper-main">
             {{ content }}
         </main>
-        <div class="push"></div>
     </div>
-        <footer class="footer">
-            {% include footer.html %}
-        </footer>
+
+    <footer class="wrapper-footer">
+        {% include footer.html %}
+    </footer>
 </body>
 </html>

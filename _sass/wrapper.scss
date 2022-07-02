@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.wrapper-main, .wrapper-header, .wrapper-footer {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* Sticky Footer */
+.wrapper {
+  min-height: calc(100vh - 40px);
+}
+
+.wrapper-footer {
+  height: 40px
+}
+/* End Sticky Footer */
+

@@ -1,8 +1,6 @@
-- name: Home
-  link: /
 - name: Posts
-  link: /posts
+  link: /
 - name: Categories
   link: /categories
-- name: Contact
+- name: About & Contact
   link: /contact

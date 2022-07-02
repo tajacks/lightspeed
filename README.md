@@ -13,16 +13,33 @@ Add the following gems to your Gemfile:
 ```
 gem "jekyll"
 gem "jekyll-feed"
+gem "jekyll-seo-tag"
 gem "jekyll-paginate-v2"
 ```
 
-Once added, run `bundle install` to install them if not present already. 
+Once added, run `bundle install` to install them if not present already. SEO is optional and can be removed without 
+impacting other functionality.
 
 ## Features
 
 - Post Support (Blog)
 - Pagination and Dynamic Categories
 - RSS Feed
+- SEO
+- Basic Mobile Support
+- Syntax Highlighting (highlight.js)
+
+## JavaScript Requirements
+`highlight.js` can be converted to CDN delivery, instead of local, by changing lines 12 & 12 in `head.html` from:
+
+
+```
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/atom-one-dark.min.css" />
+<script src="{{ site.baseurl }}/assets/js/highlight.min.js"></script>
+```
+
+
+To a CDN provider.
 
 ## Acknowledgements
 

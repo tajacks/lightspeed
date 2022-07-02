@@ -1,0 +1,11 @@
+@media only screen and (max-width: 479px) {
+
+  // Hide clutter elements on mobile
+  .mobile-hide{ display: none !important; }
+
+  // Don't split footer text
+  .footer-text{ float: left !important;}
+
+  // Phone Friendly Margarine ;)
+  html {margin: 1em !important;}
+}
