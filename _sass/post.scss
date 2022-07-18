@@ -9,7 +9,12 @@
   padding-bottom: 50px;
 }
 
-.post-content h1, h2, h3, code, pre {
+.post-content h1, h3, code, pre {
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+.post-content h2 {
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
