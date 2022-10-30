@@ -1,9 +1,0 @@
-spec:
-  name: lightspeed
-  static_sites:
-    - build_command: bundle exec jekyll build -d ./public
-      environment_slug: jekyll
-      git:
-        branch: main
-        repo_clone_url: https://github.com/tajacks/lightspeed.git
-      name: lightspeed
