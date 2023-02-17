@@ -20,6 +20,17 @@ body {
   line-height: 30px;
 }
 
+.main-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+
+div.main-content h2 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
 header h1, h5 {
   display: inline;
 }
