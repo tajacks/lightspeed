@@ -7,7 +7,7 @@ pagination:
 
 <h2>Posts</h2>
 {% for post in paginator.posts %}
-<span class="post-item">{{ post.date | date: '%Y-%m-%d' }} >> <a href="{{ post.url }}">{{ post.title }}</a><span class="float-right">{{ post.categories }}</span></span>
+<span class="post-item"><span class="mobile-hide"> {{ post.date | date: '%Y-%m-%d' }} >> </span><a href="{{ post.url }}">{{ post.title }}</a><span class="float-right mobile-hide">{{ post.categories }}</span></span>
 {% endfor %}
 
 <div class="post-nav">
