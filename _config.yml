@@ -9,10 +9,17 @@ timezone_short: ET
 # Keywords
 keywords: ['seo', 'key', 'words']
 
+# Analytics (Plausible requires sign-up)
+analytics:
+  plausible:
+    enabled: false
+    site_fqdn: 'your.site.fqdn'
+    script_source: 'https://plausible.io/js/script.js'
+
 # Styling
 sass:
   sass_dir: _sass
-  style: expanded # compressed, compact, expanded or compressed
+  style: expanded # compact, expanded or compressed
 
 # Paginate
 pagination:
